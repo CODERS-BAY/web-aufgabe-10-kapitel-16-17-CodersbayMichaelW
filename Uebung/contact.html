@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="detail-list.html">Details</a></li>
+                    <li><a href="contact.html" class="active-page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- header -->
+            <article>
+                <h1>Contact</h1>
+            </article>
+
+            <!-- galarie -->
+            <aricle class="contact">
+                <div>
+                    <form action="#">
+                        <div class="row">
+                            <label class="contact-text" for="fname">First Name:</label>
+                            <input class="contact-input" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text" for="lname">Last Name:</label>
+                            <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text" for="email">E-mail:</label>
+                            <input class="contact-input" type="text" id="email" name="email" placeholder="max@muster.com" required>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text" class="not-required" for="subject">Comment:</label>
+                            <textarea class="contact-input" id="subject" name="subject" placeholder="Write something.."></textarea>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text" for="info">Destination:</label>
+                            <select class="contact-input" id="info" name="info" required>
+                                <option value="alone">Ahnqiraj</option>
+                                <option value="family">Uldum</option>
+                                <option value="group">Moonglade</option>
+                                <option value="friends">Aszhara</option>
+                                <option value="else">Dalaran</option>
+                                <option value="else">Ferelas</option>
+                                <option value="else">Winterspring</option>
+                                <option value="else">Howling Fjord</option>
+                                <option value="else">Tanaris</option>
+                                <option value="else">Storm Peaks</option>
+                                <option value="else">Qualdanas</option>
+                                <option value="else">Jadeforest</option>
+                                <option value="else">Nagrand</option>
+                                <option value="else">Grizzly Hills</option>
+                                <option value="else">Tirisfal</option>
+                                <option value="else">Vashjir</option>
+                                <option value="else">Zangarmarsh</option>
+                            </select>
+                        </div>
+                        
+                        <div class="sub-res row">
+                            <button class="submit" type="submit" >Submit</button>
+                            <button class="reset" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </aricle>
+        </main>
+
+        <footer>
+
+        </footer>
+</html>

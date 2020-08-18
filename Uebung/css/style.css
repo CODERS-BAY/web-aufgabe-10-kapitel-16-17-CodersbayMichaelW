@@ -178,6 +178,47 @@ hr {
     }
 }
 
+/* contact */
+.contact div {
+    margin: 0 1rem;
+}
+.contact form {
+    margin-bottom: 10rem;
+}
+input[type=text], select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+label:not(.not-required)::after {
+    content: "*";
+    color: red;
+}
+
+@media (min-width: 760px) {
+    .contact div {
+        display: block;
+        padding: 0 5%;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+    }
+    .contact .row {
+        display: flex;
+        margin: 1rem;
+    }
+    .contact-text {
+        width: 20vw;
+    }
+}
+
 
 
 /* Footer */

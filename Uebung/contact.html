@@ -30,28 +30,13 @@
                 <div>
                     <form action="#">
                         <div class="row">
-                            <label class="contact-text" for="fname">First Name:</label>
-                            <input class="contact-input" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                            <label class="contact-text" for="name">Name:</label>
+                            <input class="contact-input" type="text" id="name" name="name" placeholder="Your name.." required>
                         </div>
 
                         <div class="row">
-                            <label class="contact-text" for="lname">Last Name:</label>
-                            <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                        </div>
-
-                        <div class="row">
-                            <label class="contact-text" for="email">E-mail:</label>
-                            <input class="contact-input" type="text" id="email" name="email" placeholder="max@muster.com" required>
-                        </div>
-
-                        <div class="row">
-                            <label class="contact-text" class="not-required" for="subject">Comment:</label>
-                            <textarea class="contact-input" id="subject" name="subject" placeholder="Write something.."></textarea>
-                        </div>
-
-                        <div class="row">
-                            <label class="contact-text" for="info">Destination:</label>
-                            <select class="contact-input" id="info" name="info" required>
+                            <label class="contact-text not-required" for="info">Favorite Destination:</label>
+                            <select class="contact-input" id="info" name="info">
                                 <option value="alone">Ahnqiraj</option>
                                 <option value="family">Uldum</option>
                                 <option value="group">Moonglade</option>
@@ -69,12 +54,22 @@
                                 <option value="else">Tirisfal</option>
                                 <option value="else">Vashjir</option>
                                 <option value="else">Zangarmarsh</option>
+                                <option value="nothing">Not in here</option>
                             </select>
                         </div>
+
+                        <div class="row">
+                            <label class="contact-text not-required" for="subject">Comment:</label>
+                            <textarea rows="4" class="contact-input" id="subject" name="subject" placeholder="Why is it your favorite destination?"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text not-required" for="subject">Forgot a place:</label>
+                            <textarea maxlength="25" rows="0" class="contact-input not-sizeable" id="subject" name="subject" placeholder="´What destination should we add?"></textarea>
+                        </div>
                         
-                        <div class="sub-res row">
+                        <div class="submit-div row">
                             <button class="submit" type="submit" >Submit</button>
-                            <button class="reset" type="reset">Reset</button>
                         </div>
                     </form>
                 </div>

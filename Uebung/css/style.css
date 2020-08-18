@@ -223,3 +223,25 @@ hr {
         visibility: hidden;
     }
 }
+
+/* Print Layout */
+@media print {
+    html {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+    .galerie {
+        display: block;
+    }
+    a[href]::after {
+        content: " [ "attr(href) "]";
+        color: rgb(136, 136, 136);
+    }
+    img, nav, .arrow-center, .arrow-top {
+        display: none;
+    }
+    .detail-div {
+        padding: 0;
+        margin: 0;
+    }
+}

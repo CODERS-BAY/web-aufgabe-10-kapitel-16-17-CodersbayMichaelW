@@ -10,8 +10,11 @@
 
     <body>
         <header>
-            <nav>
-                <ul class="nav-list">
+            <nav class="navigation">
+                <button class="navbutton" aria-expanded="false" aria-controls="navi-liste">
+                    ☰ Menu
+                </button>
+                <ul id="navi-list">
                     <li><a href="index.html" class="active-page">Homepage</a></li>
                     <li><a href="detail-list.html">Details</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -119,4 +122,14 @@
         <footer>
 
         </footer>
+
+        <script>
+            const hamburger = document.querySelector('button[aria-expanded]');
+            function klappNav ({target}) {
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                hamburger.setAttribute('aria-expanded', !expanded);
+            }
+            hamburger.addEventListener('click', klappNav);
+        </script>
+    </body>
 </html>

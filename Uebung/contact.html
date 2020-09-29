@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button class="navbutton" aria-expanded="false" aria-controls="navi-liste">
+                    ☰ Menu
+                </button>
+                <ul id="navi-list">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="detail-list.html">Details</a></li>
+                    <li><a href="contact.html" class="active-page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- header -->
+            <article class="contact-header">
+                <h1>Contact</h1>
+                <div class="levitate">
+                        <img class="float-img" width="35px" height="35px">
+                        <img class="float-ground" src="img/float_ground.png" width="35px">
+                </div>
+            </article>
+
+            <!-- field -->
+            <aricle class="contact">
+                <div>
+                    <form action="#">
+                        <div class="row">
+                            <label class="contact-text" for="name">Name:</label>
+                            <input class="contact-input" type="text" id="name" name="name" placeholder="Your name.." required>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text not-required" for="info">Favorite Destination:</label>
+                            <select class="contact-input" id="info" name="info">
+                                <option value="alone">Ahnqiraj</option>
+                                <option value="family">Uldum</option>
+                                <option value="group">Moonglade</option>
+                                <option value="friends">Aszhara</option>
+                                <option value="else">Dalaran</option>
+                                <option value="else">Ferelas</option>
+                                <option value="else">Winterspring</option>
+                                <option value="else">Howling Fjord</option>
+                                <option value="else">Tanaris</option>
+                                <option value="else">Storm Peaks</option>
+                                <option value="else">Qualdanas</option>
+                                <option value="else">Jadeforest</option>
+                                <option value="else">Nagrand</option>
+                                <option value="else">Grizzly Hills</option>
+                                <option value="else">Tirisfal</option>
+                                <option value="else">Vashjir</option>
+                                <option value="else">Zangarmarsh</option>
+                                <option value="nothing">Not in here</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text not-required" for="subject">Comment:</label>
+                            <textarea rows="4" class="contact-input" id="subject" name="subject" placeholder="Why is it your favorite destination?"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <label class="contact-text not-required" for="subject">Forgot a place:</label>
+                            <textarea maxlength="25" rows="0" class="contact-input not-sizeable" id="subject" name="subject" placeholder="´What destination should we add?"></textarea>
+                        </div>
+                        
+                        <div class="submit-div row">
+                            <button class="submit" type="submit" >Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </aricle>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector('button[aria-expanded]');
+            function klappNav ({target}) {
+                const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+                hamburger.setAttribute('aria-expanded', !expanded);
+            }
+            hamburger.addEventListener('click', klappNav);
+        </script>
+    </body>
+</html>
